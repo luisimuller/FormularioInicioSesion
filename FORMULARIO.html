@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <title>Creator</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css" >
+        <script type="text/javascript" src="jquery.js"></script>
+            
+    </head>
+<body>
+    <button type="button" class="btn btn-primary btn-lg bt-color bt-color-s zoomInDown" data-bs-toggle="modal" data-bs-target="#miModal">Iniciar Sesión</button>
+    <div class="modal fade" id="miModal" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="signupFrm">
+                    <button type="button" class="btn-close"  data-bs-dismiss="modal" aria-label="close"></button>
+                        <form action="" class="form" id="basic-form">
+                            <h1 class="title">Iniciar sesión</h1>
+                                <div class="inputContainer">
+                                    <input id="nombre" name="nombre"  type="text" class="input" placeholder="a">
+                                    <label for="nombre" class="label">Usuario</label>
+                                </div>
+    
+                                <div class="inputContainer">
+                                    <input id="email" name="email" type="email" class="input" placeholder="a" >
+                                    <label for="email" class="label">Email</label>
+                                </div>
+
+                                <div class="inputContainer">
+                                    <input id="clave" name="clave" type="password" class="input" placeholder="a">
+                                    <label for="clave" class="label">Contraseña</label>
+                                </div>
+
+                                <div class="">
+                                    <input type="checkbox" checked="checked" name="remember"> Recordar usuario 
+                                </div>
+                                
+                                <div class="d-flex gap-3  " >
+                                    <p class="pt-2">Aún no eres usuario?</p>
+                                    <!-- <button type="button" class=" btn-primary pb-2 " data-bs-toggle="modal"  data-bs-target="#modal2" data-bs-dismiss="modal">
+                                        Registrarse</button> -->
+                                    <input type="button" class="submitBtn " data-bs-toggle="modal"  data-bs-target="#modal2" data-bs-dismiss="modal" value="Registrarse">  
+                                    <input id="botonGuardar" class="submitBtn" type="submit" value="Ingresar">
+                                </div>
+                        </form>
+                </div>
+            </div>
+        </div>                
+    </div>
+
+<div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle2" data-bs-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+    <div class="signupFrm">
+        <form action="" class="form">
+          <h1 class="title">Registrarse</h1>
+          <button type="button" class="btn-close"  data-bs-dismiss="modal" aria-label="close"></button>
+
+          <div class="inputContainer">
+            <input id="usuario1" type="text" class="input" placeholder="a">
+            <label for="usuario1" class="label">Usuario</label>
+          </div>
+    
+          <div class="inputContainer">
+            <input id="email1" type="text" class="input" placeholder="a">
+            <label for="email1" class="label">Email</label>
+          </div>
+
+          <div class="inputContainer">
+            <input id="contraseña1" type="text" class="input" placeholder="a">
+            <label for="contraseña1" class="label">Contraseña</label>
+          </div>
+    
+          <div class="inputContainer">
+            <input id="contraseña2" type="text" class="input" placeholder="a">
+            <label for="contraseña2" class="label">Confirmar contraseña</label>
+          </div>
+
+          <input type="submit" class="submitBtn" value="Enviar">
+        </form>
+        </div>
+        </div>                
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js "
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+
+
+
+</body>
+</html>
