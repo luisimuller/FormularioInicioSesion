@@ -1,3 +1,8 @@
+.modal fade{
+  width: 70%;
+  height: 70%;
+}
+
 .signupFrm {
     display: flex;
     justify-content: center;
@@ -13,11 +18,12 @@
 
   .form {
     background-color: white;
-    width: 200%;
+    width: 500%;
     border-radius: 8px;
     padding: 20px 40px;
     box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
   }
+
   
   .title {
     font-size: 45px;
@@ -94,6 +100,7 @@
   .input:focus {
     border: 2px solid #ef8977 ;
   }
+  
 
   .input:not(:placeholder-shown)+ .label {
     top: -7px;
@@ -102,6 +109,16 @@
     font-size: 14px;
     font-weight: 600;
   }
+  
+  label.error {
+    color: black;
+    font-size:small;
+    display: block;
+    padding-top: 13%;
+    padding-left: 5%;
+    margin-top: 5%;
+    font-weight: bolder;
+}
 
   /* .end{
     display: flex;
